@@ -1,0 +1,10 @@
+<launch>
+    <include file="./camera.launch">
+      <arg name="cam_name" value="camera1"/>
+      <arg name="cam_serial" value="25810748"/>
+    </include> 
+    <include file="./camera.launch">
+      <arg name="cam_name" value="camera2"/>
+      <arg name="cam_serial" value="25810746"/>
+    </include>
+</launch>

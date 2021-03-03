@@ -1,0 +1,11 @@
+<launch>
+    <arg name="cal_square" default="0.035"/>
+    <arg name="cal_size" default="8x6"/>
+
+    <node name="camera_calibration" pkg="camera_calibration" type="cameracalibrator.py" args="--size $(arg cal_size) --square $(arg cal_square) --no-service-check --approximate 0.1">
+        <param name="left" value="/camera1/image_raw" />
+        <param name="right" value="/camera2/image_raw" />
+        <param name="left_camera" value="/camera1" />
+        <param name="right_camera" value="/camera2" />
+    </node>
+</launch>

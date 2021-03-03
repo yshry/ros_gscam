@@ -1,0 +1,1 @@
+rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.108 right:=/camera2/image_raw left:=/camera1/image_raw right_camera:=/camera2 left_camera:=/camera1 --no-service-check
